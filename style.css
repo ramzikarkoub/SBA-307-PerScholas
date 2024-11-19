@@ -441,4 +441,10 @@ input[type="radio"] {
     margin-top: 0rem;
     /* padding-top: 2rem; */
   }
+  .reviewTable {
+    /* width: 100%; */
+
+    line-height: 2rem;
+    text-align: center;
+  }
 }

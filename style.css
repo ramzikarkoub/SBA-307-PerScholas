@@ -28,14 +28,14 @@ body {
 .logoImg {
   width: 50px;
   color: white;
-  background-color: #ddd;
+  background-color: #f4a261;
   padding: 10px;
   border-radius: 10px;
 }
 
 .logoImg:hover {
-  background-color: #f4a261;
-  transition: 1s ease;
+  background-color: #eaeaea;
+  transition: 0.5s ease;
 }
 
 .headerNav {
@@ -70,12 +70,10 @@ body {
   display: none;
   position: relative;
   padding: 1.5rem;
-  /* display: flex; */
   justify-content: space-around;
   align-items: center;
 }
 .humbergerMenu {
-  /* display: none; */
   position: absolute;
   width: 40px;
   border-radius: 10px;
@@ -99,19 +97,14 @@ body {
   position: absolute;
   top: -25px;
   right: -24px;
-  /* padding: auto; */
-  /* border: solid red; */
 }
 
 .navListMobile {
-  /* width: 100%; */
-  /* display: none; */
   list-style: none;
   padding: 30% 0;
 }
 
 .navItemMobile {
-  /* border: solid blue; */
   padding: 1rem 0;
 }
 .navLinkMobile {
@@ -179,7 +172,6 @@ body {
 
 /* Table */
 .reviewTable {
-  /* width: 100%; */
   margin: 2rem 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
@@ -191,13 +183,10 @@ body {
 .headerTitleReview,
 .headerTitle {
   margin-top: 4rem;
-  /* padding-top: 2rem; */
 }
 
 .contactFormReview {
-  /* max-width: 600px; */
   min-width: 90%;
-  /* margin: 5rem auto; */
   background: #fff;
   padding: 2rem;
   border-radius: 8px;
@@ -250,13 +239,13 @@ input[type="radio"] {
 }
 .contactForm {
   max-width: 600px;
-  /* margin: 5rem auto; */
+
   background: #fff;
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  animation: fadeInUp 1s ease-out forwards; /* Apply the animation */
-  opacity: 0; /* Ensure it's hidden initially */
+  animation: fadeInUp 1s ease-out forwards;
+  opacity: 0;
 }
 .gifCall {
   display: grid;
@@ -269,34 +258,48 @@ input[type="radio"] {
 }
 .callNow {
   width: 400px;
-  background-color: #f4a261;
+  background-color: #222;
   border: none;
   font-size: 1.5rem;
-  /* color: #000000; */
   padding: 0.75rem;
   cursor: pointer;
   transition: 0.5s ease;
   border-radius: 4px;
   margin: 1rem;
-  /* align-self: center; */
+}
+.callNow:hover {
+  width: 400px;
+  background-color: #f4a261;
+  border: none;
+  font-size: 1.5rem;
+  padding: 0.75rem;
+  cursor: pointer;
+  transition: 0.5s ease;
+  border-radius: 4px;
+  margin: 1rem;
 }
 @keyframes flashAnimation {
   0% {
     opacity: 1;
+    color: rgb(1, 255, 1);
   }
   50% {
     opacity: 0;
   }
   100% {
     opacity: 1;
+    color: rgb(1, 255, 1);
   }
 }
 
 .callNow span {
   animation: flashAnimation 1s ease-out 3;
-  color: green;
+  color: #eaeaea;
 }
-
+.callNow span:hover {
+  animation: flashAnimation 1s ease-out 3;
+  color: #eaeaea;
+}
 .formLabel {
   font-weight: bold;
 }
@@ -326,12 +329,10 @@ input[type="radio"] {
 .formButton:hover {
   background-color: #f4a261;
   border: 2px solid #f4a261;
-  /* padding: 0.75rem; */
 }
 
 /* Footer */
 .footer {
-  /* position: fixed; */
   bottom: 0;
   width: 100%;
   background-color: #222;
@@ -339,11 +340,6 @@ input[type="radio"] {
   text-align: center;
   padding: 1rem 0;
 }
-/* .reviewsFooter {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-} */
 
 .footerText {
   font-size: 0.9rem;
@@ -376,24 +372,17 @@ input[type="radio"] {
     align-items: center;
   }
   .contactForm {
-    /* padding: 1.5rem; */
     min-width: 90%;
   }
   .main {
     padding: 0.5rem;
-    /* margin-bottom: 5rem; */
   }
   .footer {
     position: static;
   }
-  /* .reviewsFooter {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  } */
+
   .navMobile {
     display: flex;
-    /* display: none; */
     position: relative;
     padding: 1.5rem;
 
@@ -413,10 +402,6 @@ input[type="radio"] {
   }
   .contactContent {
     display: block;
-    /* justify-content: center;
-    align-items: center;
-    margin: 5rem auto;
-    gap: 2rem; */
   }
   .gifCall {
     margin: 5rem 0 1rem;
@@ -426,24 +411,20 @@ input[type="radio"] {
   }
   .gifImg {
     width: 90%;
-    /* height: 500px; */
     object-fit: cover;
   }
   .callNow {
     width: 50%;
   }
   input[type="radio"] {
-    /* margin-right: 2px; */
     margin-left: 1rem;
-    /* margin-bottom: 1rem; */
   }
+
   .headerTitleReview {
     margin-top: 0rem;
-    /* padding-top: 2rem; */
   }
-  .reviewTable {
-    /* width: 100%; */
 
+  .reviewTable {
     line-height: 2rem;
     text-align: center;
   }

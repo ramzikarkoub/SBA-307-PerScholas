@@ -68,10 +68,10 @@ body {
   color: #f4a261;
 }
 .navMobile{
-    /* display: none; */
+    display: none;
     position: relative;
     padding: 1.5rem;
-    display: flex;
+    /* display: flex; */
     justify-content: space-around;
     align-items: center;
    
@@ -272,7 +272,17 @@ position: absolute;
     position: static;
 
   }
-  .headerNavMobile.active {
+  .navMobile{
+    /* display: none; */
+    position: relative;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+
+}
+  .headerNavMobile .active {
     display: flex;
 }
 .headerNav {

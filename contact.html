@@ -4,10 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Contact</title>
-    <meta
-      name="description"
-      content="Browse detailed reviews of the latest movies."
-    />
+    <meta name="" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
     <link
@@ -70,35 +67,47 @@
     <main class="main">
       <section class="mainSection">
         <h1 class="sectionTitle">Contact</h1>
-        <form class="contactForm">
-          <label for="name" class="formLabel">Name:</label>
-          <input type="text" name="name" class="formInputName" />
+        <div class="contactContent">
+          <form class="contactForm">
+            <label for="name" class="formLabel">Name:</label>
+            <input type="text" name="name" class="formInputName" />
 
-          <label for="email" class="formLabel">Email:</label>
-          <input type="email" name="email" class="formInputEmail" />
+            <label for="email" class="formLabel">Email:</label>
+            <input type="email" name="email" class="formInputEmail" />
 
-          <label for="message" class="formLabel">Message:</label>
-          <textarea
-            name="message"
-            name="message"
-            class="formTextarea"
-            rows="4"
-          ></textarea>
+            <label for="message" class="formLabel">Message:</label>
+            <textarea
+              name="message"
+              name="message"
+              class="formTextarea"
+              rows="4"
+            ></textarea>
 
-          <label for="movie" class="formLabel">Select a movie:</label>
-          <select id="movie" name="movie" class="formSelect">
-            <option value="book1">Book Title 1</option>
-            <option value="book2">Book Title 2</option>
-            <option value="book3">Book Title 3</option>
-            <option value="book4">Book Title 4</option>
-          </select>
+            <label for="movie" class="formLabel">Select a movie:</label>
+            <select id="movie" name="movie" class="formSelect">
+              <option value="book1">Book Title 1</option>
+              <option value="book2">Book Title 2</option>
+              <option value="book3">Book Title 3</option>
+              <option value="book4">Book Title 4</option>
+            </select>
 
-          <button type="submit" class="formButton">Send</button>
-        </form>
+            <button type="submit" class="formButton">Send</button>
+          </form>
+          <div class="gifCall">
+            <button class="callNow" onClick="tel:800000000">
+              <span>Call Now!!!</span>
+            </button>
+            <img
+              src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWpscTc0b2UwMGVlOGgwNzJ0Nm1la2M5ZWJncWt1OHRzdm03ZHdkbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/w9xqv7uWcPe2HRZ5sX/giphy.webp"
+              alt=""
+              class="gifImg"
+            />
+          </div>
+        </div>
       </section>
     </main>
     <footer class="footer">
-      <p class="footerText">&copy; Movies Reviews</p>
+      <p class="footerText">&copy; Books Reviews</p>
     </footer>
     <script src="app.js" async defer></script>
     <script

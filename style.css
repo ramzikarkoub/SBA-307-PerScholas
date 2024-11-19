@@ -129,7 +129,7 @@ body {
 
 .mainSection {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 4rem auto 0;
 }
 
 .sectionTitle {
@@ -157,9 +157,12 @@ body {
   margin-bottom: 2rem;
   background-color: #eaeaea;
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   animation: slideIn 1s ease forwards;
   opacity: 0;
+}
+.sectionArticle:hover {
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
 }
 
 .articleImage {
@@ -178,8 +181,60 @@ body {
 .reviewTable {
   /* width: 100%; */
   margin: 2rem 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
+  line-height: 3rem;
+}
+
+/* review */
+
+.headerTitleReview,
+.headerTitle {
+  margin-top: 4rem;
+  /* padding-top: 2rem; */
+}
+
+.contactFormReview {
+  /* max-width: 600px; */
+  min-width: 90%;
+  /* margin: 5rem auto; */
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1s ease-out forwards; /* Apply the animation */
+  opacity: 0; /* Ensure it's hidden initially */
+}
+
+.formButtonReview {
+  width: 100%;
+  background-color: #222;
+  color: #fff;
+  padding: 0.75rem;
+  margin-top: 3rem;
+  cursor: pointer;
+  transition: 0.5s ease;
+  border-radius: 4px;
+}
+
+.formButtonReview:hover {
+  background-color: #f4a261;
+  border: 2px solid #f4a261;
+  /* padding: 0.75rem; */
+}
+input[type="radio"] {
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* contact page */
+
+.contactContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem auto;
+  gap: 2rem;
 }
 
 /* Form */
@@ -195,13 +250,51 @@ body {
 }
 .contactForm {
   max-width: 600px;
-  margin: 5rem auto;
+  /* margin: 5rem auto; */
   background: #fff;
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   animation: fadeInUp 1s ease-out forwards; /* Apply the animation */
   opacity: 0; /* Ensure it's hidden initially */
+}
+.gifCall {
+  display: grid;
+  place-items: center;
+}
+.gifImg {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+.callNow {
+  width: 400px;
+  background-color: #f4a261;
+  border: none;
+  font-size: 1.5rem;
+  /* color: #000000; */
+  padding: 0.75rem;
+  cursor: pointer;
+  transition: 0.5s ease;
+  border-radius: 4px;
+  margin: 1rem;
+  /* align-self: center; */
+}
+@keyframes flashAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.callNow span {
+  animation: flashAnimation 1s ease-out 3;
+  color: green;
 }
 
 .formLabel {
@@ -226,6 +319,7 @@ body {
   padding: 0.75rem;
   cursor: pointer;
   transition: 0.5s ease;
+  margin-top: 3rem;
   border-radius: 4px;
 }
 
@@ -245,11 +339,11 @@ body {
   text-align: center;
   padding: 1rem 0;
 }
-.reviewsFooter {
+/* .reviewsFooter {
   position: fixed;
   bottom: 0;
   width: 100%;
-}
+} */
 
 .footerText {
   font-size: 0.9rem;
@@ -292,11 +386,11 @@ body {
   .footer {
     position: static;
   }
-  .reviewsFooter {
+  /* .reviewsFooter {
     position: fixed;
     bottom: 0;
     width: 100%;
-  }
+  } */
   .navMobile {
     display: flex;
     /* display: none; */
@@ -316,5 +410,35 @@ body {
   }
   .header {
     justify-content: space-between;
+  }
+  .contactContent {
+    display: block;
+    /* justify-content: center;
+    align-items: center;
+    margin: 5rem auto;
+    gap: 2rem; */
+  }
+  .gifCall {
+    margin: 5rem 0 1rem;
+    display: flex;
+    gap: 40px;
+    flex-direction: column-reverse;
+  }
+  .gifImg {
+    width: 90%;
+    /* height: 500px; */
+    object-fit: cover;
+  }
+  .callNow {
+    width: 50%;
+  }
+  input[type="radio"] {
+    /* margin-right: 2px; */
+    margin-left: 1rem;
+    /* margin-bottom: 1rem; */
+  }
+  .headerTitleReview {
+    margin-top: 0rem;
+    /* padding-top: 2rem; */
   }
 }

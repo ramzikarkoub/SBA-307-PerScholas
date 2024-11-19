@@ -11,6 +11,91 @@ body {
   color: #333;
 }
 
+/* Media query */
+@media (max-width: 768px) {
+  .mainSection {
+    padding: 1rem;
+  }
+  .sectionArticle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .articleImage {
+    width: 100%;
+    height: 300px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+    object-fit: cover;
+  }
+  .titleDesc {
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contactForm {
+    min-width: 90%;
+  }
+  .main {
+    padding: 0.5rem;
+  }
+  .footer {
+    position: static;
+  }
+
+  .navMobile {
+    display: flex;
+    position: relative;
+    padding: 1.5rem;
+
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .headerNavMobile.active {
+    display: flex;
+    z-index: 100;
+  }
+  .headerNav {
+    display: none;
+  }
+  .header {
+    justify-content: space-between;
+  }
+  .contactContent {
+    display: block;
+  }
+  .gifCall {
+    margin: 5rem 0 1rem;
+    display: flex;
+    gap: 40px;
+    flex-direction: column-reverse;
+  }
+  .gifImg {
+    width: 90%;
+    object-fit: cover;
+  }
+  .callNow {
+    width: 50%;
+  }
+  input[type="radio"] {
+    margin-left: 1rem;
+  }
+
+  .headerTitleReview {
+    margin-top: 0rem;
+  }
+
+  .reviewTable {
+    line-height: 2rem;
+    text-align: center;
+  }
+}
+
 /* Header */
 .header {
   background-color: #222;
@@ -338,89 +423,4 @@ input[type="radio"] {
 
 .footerText {
   font-size: 0.9rem;
-}
-
-/* Media query */
-@media (max-width: 768px) {
-  .mainSection {
-    padding: 1rem;
-  }
-  .sectionArticle {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .articleImage {
-    width: 100%;
-    height: 300px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 0;
-    object-fit: cover;
-  }
-  .titleDesc {
-    padding: 2rem 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .contactForm {
-    min-width: 90%;
-  }
-  .main {
-    padding: 0.5rem;
-  }
-  .footer {
-    position: static;
-  }
-
-  .navMobile {
-    display: flex;
-    position: relative;
-    padding: 1.5rem;
-
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  .headerNavMobile.active {
-    display: flex;
-    z-index: 100;
-  }
-  .headerNav {
-    display: none;
-  }
-  .header {
-    justify-content: space-between;
-  }
-  .contactContent {
-    display: block;
-  }
-  .gifCall {
-    margin: 5rem 0 1rem;
-    display: flex;
-    gap: 40px;
-    flex-direction: column-reverse;
-  }
-  .gifImg {
-    width: 90%;
-    object-fit: cover;
-  }
-  .callNow {
-    width: 50%;
-  }
-  input[type="radio"] {
-    margin-left: 1rem;
-  }
-
-  .headerTitleReview {
-    margin-top: 0rem;
-  }
-
-  .reviewTable {
-    line-height: 2rem;
-    text-align: center;
-  }
 }

@@ -67,7 +67,67 @@ body {
 .navLink:hover {
   color: #f4a261;
 }
+.navMobile{
+    /* display: none; */
+    position: relative;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
 
+}
+.humbergerMenu{
+    /* display: none; */
+position: absolute;
+    width: 40px;
+    border-radius: 10px;
+    background-color: #eaeaea;
+    cursor: pointer;
+    z-index: 1000;
+}
+.humbergerMenu:hover{
+    width: 40px;
+    border-radius: 10px;
+    background-color: #f4a261;
+}
+.headerNavMobile{
+ display: none;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: #333;
+    position: absolute;
+    top: -25px;
+    right: -24px;
+    /* padding: auto; */
+    /* border: solid red; */
+    
+}
+
+.navListMobile{
+ 
+    /* width: 100%; */
+    /* display: none; */
+    list-style: none;
+    padding: 30% 0;
+}
+
+.navItemMobile{
+ /* border: solid blue; */
+ padding: 1rem 0;
+
+ 
+ 
+}
+.navLinkMobile{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
 
 /* Main Content */
 .main {
@@ -211,5 +271,17 @@ body {
   .footer {
     position: static;
 
+  }
+  .headerNavMobile.active {
+    display: flex;
+}
+.headerNav {
+    display: none;
+  
+  }
+  .header{
+   
+  justify-content: space-between;
+  
   }
 }

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Contact</title>
+    <meta
+      name="description"
+      content="Get in touch with the team behind Movie Reviews."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <a href="index.html"
+          ><img
+            src="https://www.svgrepo.com/show/784/book.svg"
+            alt=""
+            class="logoImg"
+        /></a>
+      </div>
+
+      <nav class="headerNav">
+        <ul class="navList">
+          <li class="navItem">
+            <a href="index.html" class="navLink">Home</a>
+          </li>
+          <li class="navItem">
+            <a href="reviews.html" class="navLink">Reviews</a>
+          </li>
+          <li class="navItem">
+            <a href="contact.html" class="navLink">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="mainSection">
+        <h1 class="sectionTitle">Contact</h1>
+        <form class="contactForm">
+          <label for="name" class="formLabel">Name:</label>
+          <input type="text" name="name" class="formInputName" />
+
+          <label for="email" class="formLabel">Email:</label>
+          <input type="email" name="email" class="formInputEmail" />
+
+          <label for="message" class="formLabel">Message:</label>
+          <textarea
+            name="message"
+            name="message"
+            class="formTextarea"
+            rows="4"
+          ></textarea>
+
+          <label for="movie" class="formLabel">Select a movie:</label>
+          <select id="movie" name="movie" class="formSelect">
+            <option value="book1">Book Title 1</option>
+            <option value="book2">Book Title 2</option>
+            <option value="book3">Book Title 3</option>
+            <option value="book4">Book Title 4</option>
+          </select>
+
+          <button type="submit" class="formButton">Send</button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footerText">&copy; Movies Reviews</p>
+    </footer>
+    <script src="app.js" async defer></script>
+  </body>
+</html>

@@ -1,0 +1,215 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header */
+.header {
+  background-color: #222;
+  color: #fff;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logoImg {
+  width: 50px;
+  color: white;
+  background-color: #ddd;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.logoImg:hover {
+  background-color: #f4a261;
+  transition: 1s ease;
+}
+
+.headerNav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+}
+.navList {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.navLink:hover {
+  color: #f4a261;
+}
+
+
+/* Main Content */
+.main {
+  padding: 2rem;
+  margin-bottom: 5rem;
+}
+
+.mainSection {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  color: #444;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.sectionArticle {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  background-color: #eaeaea;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.articleImage {
+  width: 200px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.articleText{
+    margin-bottom: 20px;
+}
+.titleDesc{
+    padding: 1rem;
+}
+
+
+/* Table */
+.reviewTable {
+  /* width: 100%; */
+  margin: 2rem 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+
+/* Form */
+.contactForm {
+  max-width: 600px;
+  margin: 5rem auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+ 
+}
+
+.formLabel {
+  font-weight: bold;
+  
+}
+
+.formInputName,
+.formInputEmail,
+.formTextarea,
+.formSelect {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0 1.5rem;
+  border: 1px solid #f6d5bb;
+  border-radius: 4px;
+}
+
+
+.formButton {
+  width: 100%;
+  background-color: #222;
+  color: #fff;
+  padding: 0.75rem;
+  cursor: pointer;
+  transition: 0.5s ease;
+  border-radius: 4px;
+}
+
+.formButton:hover {
+  background-color: #f4a261;
+  border: 1px solid #f4a261;
+}
+
+/* Footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.footerText {
+  font-size: 0.9rem;
+}
+
+/* Media query */
+@media (max-width: 768px) {
+  .mainSection {
+    padding: 1rem;
+  }
+  .sectionArticle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    pad
+  }
+  .articleImage {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
+  .titleDesc{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contactForm {
+    /* padding: 1.5rem; */
+    min-width: 90%;
+  }
+  .main {
+    padding: 0.5rem;
+    /* margin-bottom: 5rem; */
+  }
+  .footer {
+    position: static;
+
+  }
+}

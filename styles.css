@@ -146,20 +146,7 @@ position: absolute;
   margin-bottom: 1rem;
   text-align: center;
 }
-/* .sectionArticle {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 2rem;
-  background-color: #eaeaea;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  transition: 1s ease;
 
-  /* transform: translate(50px); */
-  /* transform: translateX(50px); */
-  
-/* }  */
 @keyframes slideIn {
     from {
       opacity: 0; 
@@ -206,6 +193,16 @@ position: absolute;
 
 
 /* Form */
+@keyframes fadeInUp {
+    from {
+      opacity: 0; 
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1; 
+      transform: translateY(0); 
+    }
+  }
 .contactForm {
   max-width: 600px;
   margin: 5rem auto;
@@ -213,8 +210,11 @@ position: absolute;
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
- 
+  animation: fadeInUp 1s ease-out forwards; /* Apply the animation */
+  opacity: 0; /* Ensure it's hidden initially */
 }
+
+  
 
 .formLabel {
   font-weight: bold;

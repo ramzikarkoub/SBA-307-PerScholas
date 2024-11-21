@@ -75,6 +75,7 @@
               <th scope="col">Title</th>
               <th scope="col">Rating</th>
               <th scope="col">Reviews</th>
+              <th scope="col"></th>
             </tr>
           </thead>
           <tbody>
@@ -85,11 +86,21 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
                 consectetur!
               </td>
+              <td>
+                <button type="button" class="reviewButton btn btn-success">
+                  <a href="#formSection" class="reviewBtn"> Write a review</a>
+                </button>
+              </td>
             </tr>
             <tr>
               <th scope="row">Book 2</th>
               <td>3 Stars</td>
               <td>Lorem ipsum dolor sit amet.</td>
+              <td>
+                <button type="button" class="reviewButton btn btn-success">
+                  <a href="#formSection" class="reviewBtn"> Write a review</a>
+                </button>
+              </td>
             </tr>
             <tr>
               <th scope="row">Book 3</th>
@@ -98,11 +109,16 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Obcaecati illum
               </td>
+              <td>
+                <button type="button" class="reviewButton btn btn-success">
+                  <a href="#formSection" class="reviewBtn"> Write a review</a>
+                </button>
+              </td>
             </tr>
           </tbody>
         </table>
       </section>
-      <section class="mainSection">
+      <section class="mainSection" id="formSection">
         <h2 class="headerTitleReview">Write a Review</h2>
         <form class="contactFormReview">
           <label for="name" class="formLabel">Name:</label>

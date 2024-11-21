@@ -179,6 +179,10 @@ body {
 .headerTitle {
   margin-top: 4rem;
 }
+.reviewBtn {
+  text-decoration: none;
+  color: white;
+}
 
 .contactFormReview {
   min-width: 90%;
